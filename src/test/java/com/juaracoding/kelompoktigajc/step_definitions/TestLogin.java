@@ -19,26 +19,42 @@ public class TestLogin {
         driver = Hooks.driver;
         extentTest = Hooks.extentTest;
     }
-
-    @When("User go to web login")
-    public void user_go_to_web_login_demoqa(){
-        driver.get(Constants.URL);
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS,"User Go to web login");
+    @When("User enter empty username and password")
+    public void user_enter_empty_username_and_password(){
+        loginPage.login("","");
+        extentTest.log(LogStatus.PASS,"User enter empty username and password");
     }
-    @And("User enter username and password")
+    @And("User click login button")
+    public void user_click_login_button(){
+        loginPage.clickBtnLogin();
+        extentTest.log(LogStatus.PASS,"User clicked login button");
+    }
+    @Then("User get message required")
+    public void user_get_message_required(){
+        Assert.assertEquals(loginPage.getTxtUsernameRequired(),"true");
+        Assert.assertEquals(loginPage.getTxtPasswordRequired(),"true");
+        extentTest.log(LogStatus.PASS,"User get message required");
+    }
+
+    @When("User bd enter valid username and password")
     public void user_enter_username_and_password(){
         loginPage.login("bd","12345678");
-        extentTest.log(LogStatus.PASS,"User enter username and password");
+        extentTest.log(LogStatus.PASS,"User enter valid username and password");
     }
-    @And("User click button login")
+    @And("User bd click button login")
     public void user_click_button_login(){
         loginPage.clickBtnLogin();
         extentTest.log(LogStatus.PASS,"User click button login");
     }
-    @Then("User login success")
-    public void user_login_success(){
+    @Then("User bd login success")
+    public void user_bd_login_success(){
+        Hooks.delay(1);
         Assert.assertEquals(loginPage.getTxtLoginSuccess(),"Dashboard");
         extentTest.log(LogStatus.PASS,"User login Success");
+    }
+    @When("User bd enter valid uppercase username")
+    public void user_bd_enter_valid_uppercase_username(){
+        loginPage.login("BD","12345678");
+        extentTest.log(LogStatus.PASS,"User enter valid uppercase username");
     }
 }

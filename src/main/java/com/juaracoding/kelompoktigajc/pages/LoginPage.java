@@ -21,23 +21,31 @@ public class LoginPage {
     @FindBy(xpath = "//button[@type='submit']")
     WebElement btnLogin;
     @FindBy(xpath = "//*[@id=\"content\"]/h1")
-    WebElement txtLogin;
-    @FindBy(xpath = "//*[@id=\"content\"]/h1")
     WebElement txtLoginSuccess;
+    @FindBy(xpath = "//*[@id=\"username\"]")
+    WebElement txtUsernameRequired;
+    @FindBy(xpath = "//*[@id=\"password\"]")
+    WebElement txtPasswordRequired;
+    @FindBy(xpath = "//*[@id=\"page-container\"]/div/div[2]/div/div")
+    WebElement txtGagalLogin;
 
     public void login(String username, String password) {
-        this.username.click();
         this.username.sendKeys(username);
-        this.password.click();
         this.password.sendKeys(password);
     }
     public void clickBtnLogin() {
         btnLogin.click();
     }
-    public String getTxtLogin(){
-        return txtLogin.getText();
-    }
     public String getTxtLoginSuccess(){
         return txtLoginSuccess.getText();
+    }
+    public String getTxtUsernameRequired(){
+       return txtUsernameRequired.getAttribute("required");
+    }
+    public String getTxtPasswordRequired(){
+        return txtPasswordRequired.getAttribute("required");
+    }
+    public String getTxtGagalLogin(){
+        return txtGagalLogin.getText();
     }
 }
