@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Master">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/drivers/strategies/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/drivers/strategies/Chrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/drivers/strategies/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/drivers/strategies/Firefox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Second Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668088927178</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Commit">
+      <created>1668422059631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668422059631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Master" />
-    <option name="LAST_COMMIT_MESSAGE" value="Master" />
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
 </project>
