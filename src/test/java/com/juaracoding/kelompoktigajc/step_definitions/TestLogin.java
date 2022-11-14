@@ -1,12 +1,14 @@
 package com.juaracoding.kelompoktigajc.step_definitions;
 
 import com.juaracoding.kelompoktigajc.pages.LoginPage;
+import com.juaracoding.kelompoktigajc.pages.OpenUrl;
 import com.juaracoding.kelompoktigajc.utils.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.plugin.event.HookTestStep;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -14,6 +16,7 @@ public class TestLogin {
     private static WebDriver driver;
     private static ExtentTest extentTest;
     private LoginPage loginPage = new LoginPage();
+    private OpenUrl openUrl = new OpenUrl();
 
     public TestLogin() {
         driver = Hooks.driver;
@@ -52,9 +55,33 @@ public class TestLogin {
         Assert.assertEquals(loginPage.getTxtLoginSuccess(),"Dashboard");
         extentTest.log(LogStatus.PASS,"User login Success");
     }
-    @When("User bd enter valid uppercase username")
+    @When("TCC.LOGIN.005")
     public void user_bd_enter_valid_uppercase_username(){
         loginPage.login("BD","12345678");
         extentTest.log(LogStatus.PASS,"User enter valid uppercase username");
+    }
+
+    @When("TCC.LOGIN.004")
+    public void tcc_login_004(){
+        loginPage.login("bda","123456");
+        extentTest.log(LogStatus.PASS,"User enter invalid username and password");
+    }
+
+    @Then("User bd login fail")
+    public void user_bd_login_fail(){
+        Hooks.delay(1);
+        Assert.assertTrue(loginPage.getTxtGagalLogin().contains("Gagal! Username or Password Incorrect"));
+        extentTest.log(LogStatus.PASS,"User bd login fail");
+    }
+    @When("TCC.LOGIN.007")
+    public void user_bd_logout(){
+        loginPage.logout();
+        extentTest.log(LogStatus.PASS,"User bd click logout");
+    }
+    @Then("User bd has log out")
+    public void user_bd_has_log_out(){
+        Hooks.delay(1);
+        Assert.assertEquals(openUrl.getTxtUrl(),"User Login");
+        extentTest.log(LogStatus.PASS, "User bd logout success");
     }
 }

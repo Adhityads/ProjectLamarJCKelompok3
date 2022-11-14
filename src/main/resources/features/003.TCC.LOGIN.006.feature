@@ -1,4 +1,4 @@
-Feature: User Invalid login
+Feature: TCC.LOGIN.006
 
   Scenario: TCC.LOGIN.006
     When User enter empty username and password

@@ -1,6 +1,7 @@
 package com.juaracoding.kelompoktigajc.pages;
 
 import com.juaracoding.kelompoktigajc.drivers.DriverSingleton;
+import io.cucumber.messages.types.Hook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,6 +30,12 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"page-container\"]/div/div[2]/div/div")
     WebElement txtGagalLogin;
 
+    @FindBy(xpath = "//*[@id=\"header\"]/ul/li/a")
+    WebElement buttonProfil;
+
+    @FindBy(xpath = "//*[@id=\"header\"]/ul/li/div/a")
+    WebElement buttonLogout;
+
     public void login(String username, String password) {
         this.username.sendKeys(username);
         this.password.sendKeys(password);
@@ -47,5 +54,9 @@ public class LoginPage {
     }
     public String getTxtGagalLogin(){
         return txtGagalLogin.getText();
+    }
+    public void logout(){
+        buttonProfil.click();
+        buttonLogout.click();
     }
 }

@@ -1,0 +1,4 @@
+Feature: TCC.BD.FILTERBYSTATUS.007
+  Scenario: TCC.BD.FILTERBYSTATUS.007
+    When TCC.BD.FILTERBYSTATUS.007
+    Then User bd on data aktif
