@@ -1,7 +1,8 @@
 package com.juaracoding.kelompoktigajc.utils;
 
 public enum TestScenarios {
-    T1("User login");
+    T1("User login"),
+    T2("User go to recruitment");
 
     private String testName;
 
