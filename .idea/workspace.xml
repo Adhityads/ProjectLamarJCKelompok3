@@ -4,33 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Master">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/001.TCC.LOGIN.002.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/002.TCC.LOGIN.001.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/004.TCC.LOGIN.004.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/006.TCC.LOGIN.007.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/007.TCC.LOGIN.005.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/008.TCC.BD.FILTERBYSTATUS.007.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/009.TCC.BD.FILTERBYSTATUS.008.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/010.TCC.BD.FILTERBYSTATUS.009.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/011.TCC.BD.FILTERBYSTATUS.010.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/012.TCC.BD.FILTERBYSTATUS.011.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/013.TCC.BD.FILTERBYSTATUS.012.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/014.TCC.BD.SHOWENTRIES.005.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/015.TCC.BD.SHOWENTRIES.006.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/016.TCC.BD.SHOWENTRIES.007.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/017.TCC.BD.SHOWENTRIES.008.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/018.TCC.BD.SEARCH.004.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktif.java" afterDir="false" />
+    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/001.Login.bd.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/002.Filterbystatus.bd.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/003.Showentries.bd.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/004.Search.bd.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/005.Dataaktif.aksi.bd.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktif.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/01.OpenUrl.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/02.LoginInvalid.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/003.TCC.LOGIN.006.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/03.Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/005.TCC.LOGIN.003.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/001.TCC.LOGIN.002.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/002.TCC.LOGIN.001.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/003.TCC.LOGIN.006.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/004.TCC.LOGIN.004.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/005.TCC.LOGIN.003.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/006.TCC.LOGIN.007.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/007.TCC.LOGIN.005.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/008.TCC.BD.FILTERBYSTATUS.007.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/009.TCC.BD.FILTERBYSTATUS.008.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/010.TCC.BD.FILTERBYSTATUS.009.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/011.TCC.BD.FILTERBYSTATUS.010.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/012.TCC.BD.FILTERBYSTATUS.011.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/013.TCC.BD.FILTERBYSTATUS.012.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/014.TCC.BD.SHOWENTRIES.005.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/015.TCC.BD.SHOWENTRIES.006.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/016.TCC.BD.SHOWENTRIES.007.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/017.TCC.BD.SHOWENTRIES.008.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/018.TCC.BD.SEARCH.004.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/extent-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/extent-reports.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668089030081</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update">
+      <created>1668431828473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668431828474</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Master" />
-    <option name="LAST_COMMIT_MESSAGE" value="Master" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

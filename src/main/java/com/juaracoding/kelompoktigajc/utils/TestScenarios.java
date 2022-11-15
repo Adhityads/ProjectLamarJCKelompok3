@@ -18,7 +18,12 @@ public enum TestScenarios {
     T15("TCC.BD.SHOWENTRIES.006"),
     T16("TCC.BD.SHOWENTRIES.007"),
     T17("TCC.BD.SHOWENTRIES.008"),
-    T18("TCC.BD.SEARCH.004");
+    T18("TCC.BD.SEARCH.004"),
+    T19("TCC.BD.SEARCH.006"),
+    T20("TCC.BD.SEARCH.005"),
+    T21("TCC.BD.DATAAKTIF.AKSI.001"),
+    T22("TCC.BD.DATAAKTIF.AKSI.002");
+
 
 
     private String testName;

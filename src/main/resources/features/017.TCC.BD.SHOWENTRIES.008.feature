@@ -1,4 +1,0 @@
-Feature: TCC.BD.SHOWENTRIES.008
-  Scenario: TCC.BD.SHOWENTRIES.008
-    When TCC.BD.SHOWENTRIES.008
-    Then User show 100 entries

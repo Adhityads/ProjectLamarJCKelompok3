@@ -1,12 +1,14 @@
 package com.juaracoding.kelompoktigajc.pages;
 
 import com.juaracoding.kelompoktigajc.drivers.DriverSingleton;
-import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class DataAktif {
     private WebDriver driver;
@@ -44,7 +46,13 @@ public class DataAktif {
     WebElement buttonRefresh;
 
     @FindBy(xpath = "//*[@id=\"table\"]/tbody")
-    WebElement txtSearch;
+    WebElement txtTable;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[1]/td[1]")
+    WebElement buttonPlus;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[1]")
+    WebElement txtAksi;
 
 
     public void clickMenuRecruitment(){
@@ -102,9 +110,8 @@ public class DataAktif {
         Select showentries = new Select(elementSelectShowentries);
         showentries.selectByIndex(3);
     }
-    public void searchvalid(String searchValue){
+    public void searchInput(String searchValue){
         search.sendKeys(searchValue);
-        searchValue = this.searchValue;
     }
     public void clickButtonSearch(){
         buttonSearch.click();
@@ -112,10 +119,23 @@ public class DataAktif {
     public void clickButtonRefresh(){
         buttonRefresh.click();
     }
-    public String getTxtSearch(){
-        return txtSearch.getText();
+    public String getTxtTable(){
+        return txtTable.getText();
     }
-    public String getSearchValue(){
-        return searchValue;
+    public int getTxtTableRow(){
+        List<WebElement> rows = txtTable.findElements(By.tagName("tr"));
+        int row = rows.size();
+        return row;
+    }
+    public void clickButtonPlus(){
+        buttonPlus.click();
+    }
+    public String getTxtAksi(){
+        return txtAksi.getText();
+    }
+    public int getIntAksi(){
+        List<WebElement> intAksi = txtAksi.findElements(By.tagName("span"));
+        int i = intAksi.size();
+        return i;
     }
 }
