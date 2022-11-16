@@ -14,6 +14,16 @@ public class LoginPage {
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
+
+    public void Delay(int lama){
+        try {
+            Thread.sleep(1000*lama);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
     @FindBy(xpath = "//input[@id='username']")
     WebElement username;
     @FindBy(xpath = "//input[@id='password']")
@@ -38,6 +48,7 @@ public class LoginPage {
         return txtLogin.getText();
     }
     public String getTxtLoginSuccess(){
+        Delay(1);
         return txtLoginSuccess.getText();
     }
 }

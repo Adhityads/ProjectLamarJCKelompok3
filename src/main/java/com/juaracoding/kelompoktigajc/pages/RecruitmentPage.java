@@ -20,6 +20,15 @@ public class RecruitmentPage {
         PageFactory.initElements(driver, this);
     }
 
+    public void Delay(int lama){
+        try {
+            Thread.sleep(1000*lama);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
     //button
     @FindBy(xpath = "//a[normalize-space()='Recruitment Request']")
     WebElement menuRecruitmentRequest;
@@ -27,11 +36,17 @@ public class RecruitmentPage {
     WebElement menuDataPengajuan;
     @FindBy(id = "filterStatus")
     WebElement clickFilter;
-
     @FindBy(xpath = "//*[@id=\"filterStatus\"]/option")
     List<WebElement> listbtnFilter;
     @FindBy(xpath = "//button[@id='btn-filter']")
     WebElement btnFilter;
+    @FindBy(xpath = "//button[@id='btn-reset']")
+    WebElement btnReset;
+
+    @FindBy(xpath = "//*[@id=\"table_filter\"]/label/input")
+    WebElement clickSearch;
+    @FindBy(xpath = "//*[@id=\"btnSearch\"]")
+    WebElement btnSearch;
 
 
 
@@ -42,9 +57,12 @@ public class RecruitmentPage {
     WebElement txtRecruitmentRequest;
     @FindBy(xpath = "//*[@id=\"content\"]/div[2]/div/ul/li")
     List<WebElement> txtDataPengajuan;
-    @FindBy(id = "table_info")
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr/td")
     WebElement txtFilterApprove;
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[1]/td[6]/span")
+    WebElement txtFilter;
 
+    //-----------------------------------------------------------------------------------------------//
 
     //Menu
     public void MenuRecruitment(){
@@ -55,17 +73,45 @@ public class RecruitmentPage {
     }
     public void FilterByApprove(){
         //WebDriverWait wait = new WebDriverWait(driver, 30);
-        clickFilter.click();
         //wait.until(ExpectedConditions.elementToBeClickable(listbtnFilter.get(1)));
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        clickFilter.click();
+        Delay(2);
         listbtnFilter.get(1).click();
         btnFilter.click();
     }
+    public void FilterByPending(){
+        clickFilter.click();
+        Delay(2);
+        listbtnFilter.get(2).click();
+        btnFilter.click();
+    }
+    public void FilterByReturn(){
+        clickFilter.click();
+        Delay(2);
+        listbtnFilter.get(3).click();
+        btnFilter.click();
+    }
+    public void FilterByCancel(){
+        clickFilter.click();
+        Delay(2);
+        listbtnFilter.get(4).click();
+        btnFilter.click();
+    }
+    public void klikInputSeach(){
+        btnReset.click();
+        clickSearch.click();
+    }
+    public void inputValidSearch(){
+        Delay(2);
+        clickSearch.sendKeys("Ka");
+        btnSearch.click();
+    }
+    public void inputInvalidSearch(){
+        Delay(2);
+        clickSearch.sendKeys("@&*");
+        btnSearch.click();
+    }
+
 
     //------------------------------------------------------------------------------------------------//
 
@@ -77,12 +123,11 @@ public class RecruitmentPage {
         return txtDataPengajuan.get(0).getAttribute("innerText");
     }
     public String getTxtFilter() {
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        Delay(2);
+        return txtFilter.getText();
+    }
+    public String getTxtFilterApprove() {
+        Delay(2);
         return txtFilterApprove.getText();
     }
 
