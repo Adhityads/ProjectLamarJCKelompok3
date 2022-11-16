@@ -54,6 +54,50 @@ public class DataAktif {
     @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[1]")
     WebElement txtAksi;
 
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[1]")
+    WebElement iconViewDataBd;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[2]")
+    WebElement iconDownloadDataBd;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[3]")
+    WebElement iconUpdateStatusBd;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[4]")
+    WebElement iconRepeatDataBd;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[5]")
+    WebElement iconPosterBd;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[1]/div")
+    WebElement txtJumlahKebutuhan;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/div[2]")
+    WebElement txtKebutuhan;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/div[3]")
+    WebElement txtKualifikasi;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[3]/div")
+    WebElement txtFormFrom;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[4]/div")
+    WebElement txtRemunerasi;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/a[2]")
+    WebElement buttonBackViewData;
+
+    @FindBy(xpath = "//*[@id=\"Modal_Edit\"]/div/div")
+    WebElement txtUpdateStatus;
+
+    @FindBy(xpath = "//*[@id=\"Modal_Edit\"]/div/div/form/div[2]/button[1]")
+    WebElement buttonUpdateStatusUpdate;
+
+    @FindBy(xpath = "//*[@id=\"batal\"]")
+    WebElement buttonUpdateStatusBatal;
+
+    @FindBy(xpath = "//*[@id=\"status\"]")
+    WebElement updateStatusStatus;
 
     public void clickMenuRecruitment(){
         menuRecruitment.click();
@@ -137,5 +181,56 @@ public class DataAktif {
         List<WebElement> intAksi = txtAksi.findElements(By.tagName("span"));
         int i = intAksi.size();
         return i;
+    }
+
+    public void clickIconViewDataBd(){
+        iconViewDataBd.click();
+    }
+    public void clickIconDownloadDataBd(){
+        iconDownloadDataBd.click();
+    }
+    public void clickIconUpdateStatusBd(){
+        iconUpdateStatusBd.click();
+    }
+    public void clickIconRepeatDataBd(){
+        iconRepeatDataBd.click();
+    }
+    public void clickIconPosterBd(){
+        iconPosterBd.click();
+    }
+    public void clickButtonBackViewData(){
+        buttonBackViewData.click();
+    }
+    public String getTxtJumlahKebutuhan(){
+        return txtJumlahKebutuhan.getText();
+    }
+    public String getTxtKebutuhan(){
+        return txtKebutuhan.getText();
+    }
+    public String getTxtKualifikasi(){
+        return txtKualifikasi.getText();
+    }
+    public String getTxtFormFrom(){
+        return txtFormFrom.getText();
+    }
+    public String getTxtRemunerasi(){
+        return txtRemunerasi.getText();
+    }
+    public String getTxtUpdateStatus(){
+        return txtUpdateStatus.getText();
+    }
+    public void clickButtonUpdateStatusUpdate(){
+        buttonUpdateStatusUpdate.click();
+    }
+    public void clickButtonUpdateStatusBatal(){
+        buttonUpdateStatusBatal.click();
+    }
+    public void updateStatusStatus(){
+        WebElement elementSelectStatus = updateStatusStatus;
+        Select status = new Select(elementSelectStatus);
+        status.selectByIndex(0);
+    }
+    public String getTxtStatus(){
+        return updateStatusStatus.getAttribute("required");
     }
 }

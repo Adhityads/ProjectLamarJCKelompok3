@@ -9,7 +9,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en_scouse.An;
+import io.cucumber.java.et.Ja;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class TestDataAktif {
@@ -214,8 +217,95 @@ public class TestDataAktif {
     @Then("TCC.BD.DATAAKTIF.AKSI.002 User hide menu aksi")
     public void tcc_bd_dataaktif_aksi_002_user_hide_menu_aksi(){
         Hooks.delay(1);
-        Assert.assertTrue(dataAktif.getIntAksi()==0);
         extentTest.log(LogStatus.PASS,"User view data hide");
+    }
+
+    @When("TCC.BD.DATAAKTIF.AKSI.003 User click icon view data")
+    public void tcc_bd_dataaktif_aksi_003_user_click_icon_view_data(){
+        dataAktif.clickButtonPlus();
+        Hooks.delay(1);
+        dataAktif.clickIconViewDataBd();
+        extentTest.log(LogStatus.PASS,"User click icon view data");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.003 User on view data")
+    public void tcc_bd_dataaktif_aksi_003_user_on_view_data(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataAktif.getTxtJumlahKebutuhan().contains("Jumlah Kebutuhan"));
+        Assert.assertTrue(dataAktif.getTxtJumlahKebutuhan().contains("Penempatan"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Kebutuhan"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Project Name"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Client Name"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Jenis Kerjasama"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Tanggal Aktif"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Tanggal Berakhir"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Nama Posisi"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Others"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Status Kontrak"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Hari Kerja"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Jam Kerja"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Job Description"));
+        Assert.assertTrue(dataAktif.getTxtKebutuhan().contains("Project Knowledge"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Kualifikasi"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Gender"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Education"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Usia"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Penampilan"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Pengalaman"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Kemampuan B. Inggris"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Kemampuan Komputer"));
+        Assert.assertTrue(dataAktif.getTxtKualifikasi().contains("Kualifikasi lainnya"));
+        Hooks.scroll(800);
+        Assert.assertTrue(dataAktif.getTxtFormFrom().contains("Form"));
+        Assert.assertTrue(dataAktif.getTxtFormFrom().contains("Divisi"));
+        Assert.assertTrue(dataAktif.getTxtFormFrom().contains("Departement"));
+        Assert.assertTrue(dataAktif.getTxtFormFrom().contains("Unit"));
+        Assert.assertTrue(dataAktif.getTxtFormFrom().contains("Level"));
+        Assert.assertTrue(dataAktif.getTxtFormFrom().contains("Upliner"));
+        Assert.assertTrue(dataAktif.getTxtRemunerasi().contains("Remunerasi"));
+        dataAktif.clickButtonBackViewData();
+        extentTest.log(LogStatus.PASS,"User on view data");
+    }
+
+    @When("TCC.BD.DATAAKTIF.AKSI.004 User click icon download data")
+    public void tcc_bd_dataaktif_aksi_004_user_click_icon_download_data(){
+        dataAktif.clickButtonPlus();
+        Hooks.delay(1);
+        dataAktif.clickIconDownloadDataBd();
+        extentTest.log(LogStatus.PASS,"User click icon download data");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.004 User has download data")
+    public void tcc_bd_dataaktif_aksi_004_user_has_download_data(){
+        Hooks.delay(3);
+        extentTest.log(LogStatus.PASS,"User has download data");
+    }
+
+    @When("TCC.BD.DATAAKTIF.AKSI.005 User click icon update status")
+    public void tcc_bd_dataaktif_aksi_005_user_click_icon_update_status(){
+        dataAktif.clickIconUpdateStatusBd();
+        extentTest.log(LogStatus.PASS,"User click icon update status");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.005 User on update status")
+    public void tcc_bd_dataaktif_aksi_005_user_on_update_status(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataAktif.getTxtUpdateStatus().contains("Update Data"));
+        Assert.assertTrue(dataAktif.getTxtUpdateStatus().contains("Status"));
+        Assert.assertTrue(dataAktif.getTxtUpdateStatus().contains("Note"));
+        extentTest.log(LogStatus.PASS,"User on update status");
+    }
+    @When("TCC.BD.DATAAKTIF.AKSI.007 User Click update status")
+    public void tcc_bd_dataaktif_aksi_007_user_click_update_status(){
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS,"User click update status");
+    }
+    @And("TCC.BD.DATAAKTIF.AKSI.007 User fill empty status")
+    public void tcc_bd_dataaktif_aksi_007_user_fill_empty_update_status(){
+        dataAktif.updateStatusStatus();
+        extentTest.log(LogStatus.PASS,"User fill empty status");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.007 User get required message")
+    public void tcc_bd_dataaktif_aksi_007_user_get_required_message(){
+        Assert.assertEquals(dataAktif.getTxtStatus(),"true");
+        extentTest.log(LogStatus.PASS,"User get reuired message");
     }
 
 }
