@@ -281,6 +281,9 @@ public class TestDataAktif {
 
     @When("TCC.BD.DATAAKTIF.AKSI.005 User click icon update status")
     public void tcc_bd_dataaktif_aksi_005_user_click_icon_update_status(){
+        Hooks.delay(1);
+        dataAktif.clickButtonPlusDua();
+        Hooks.delay(2);
         dataAktif.clickIconUpdateStatusBd();
         extentTest.log(LogStatus.PASS,"User click icon update status");
     }
@@ -292,20 +295,113 @@ public class TestDataAktif {
         Assert.assertTrue(dataAktif.getTxtUpdateStatus().contains("Note"));
         extentTest.log(LogStatus.PASS,"User on update status");
     }
-    @When("TCC.BD.DATAAKTIF.AKSI.007 User Click update status")
-    public void tcc_bd_dataaktif_aksi_007_user_click_update_status(){
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS,"User click update status");
-    }
-    @And("TCC.BD.DATAAKTIF.AKSI.007 User fill empty status")
+
+    @When("TCC.BD.DATAAKTIF.AKSI.007 User fill empty status")
     public void tcc_bd_dataaktif_aksi_007_user_fill_empty_update_status(){
-        dataAktif.updateStatusStatus();
+        Hooks.delay(2);
+        dataAktif.updateStatusStatusEmpty();
         extentTest.log(LogStatus.PASS,"User fill empty status");
+    }
+    @And("TCC.BD.DATAAKTIF.AKSI.007 User click button update")
+    public void tcc_bd_dataaktif_aksi_007_user_click_button_update(){
+        dataAktif.clickButtonUpdateStatusUpdate();
+        extentTest.log(LogStatus.PASS,"User click button update");
     }
     @Then("TCC.BD.DATAAKTIF.AKSI.007 User get required message")
     public void tcc_bd_dataaktif_aksi_007_user_get_required_message(){
         Assert.assertEquals(dataAktif.getTxtStatus(),"true");
         extentTest.log(LogStatus.PASS,"User get reuired message");
+    }
+
+    @When("TCC.BD.DATAAKTIF.AKSI.006 User click update status")
+    public void tcc_bd_dataaktif_aksi_006_user_fill_valid_update_status(){
+        Hooks.delay(1);
+        dataAktif.updateStatusStatusValid();
+        extentTest.log(LogStatus.PASS,"User fill valid update status");
+    }
+    @And("TCC.BD.DATAAKTIF.AKSI.006 User click button update")
+    public void tcc_bd_dataaktif_aksi_006_user_click_button_update(){
+        dataAktif.clickButtonUpdateStatusUpdate();
+        extentTest.log(LogStatus.PASS,"User click button update");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.006 User get success message")
+    public void tcc_bd_dataaktif_aksi_006_user_get_success_message(){
+        Hooks.delay(1);
+        Assert.assertEquals(dataAktif.getTxtUpdateStatusValid(),"DONE");
+        extentTest.log(LogStatus.PASS,"User success update status");
+    }
+
+    @When("TCC.BD.DATAAKTIF.AKSI.008 User click icon repeat data")
+    public void tcc_bd_dataaktif_aksi_008_user_click_icon_repeat_data(){
+        Hooks.delay(1);
+        dataAktif.clickIconRepeatDataBd();
+        extentTest.log(LogStatus.PASS,"User click icon repeat data");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.008 User on repeat data")
+    public void tcc_bd_dataaktif_aksi_008_user_on_repeat_data(){
+        Hooks.delay(2);
+        System.out.println(dataAktif.getTxtRepeatData());
+        Assert.assertTrue(dataAktif.getTxtRepeatData().contains("Form Repeat"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataJumlahKebutuhan().contains("Bekasi"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataKebutuhan().contains("CRM OPERATOR"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataKebutuhan().contains("HCI"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataKebutuhan().contains("Design Grafis"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataKebutuhan().contains("MAGANG"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataKebutuhan().contains("Shift"));
+        Assert.assertTrue(dataAktif.getTxtRepeatDataKualifikasi().contains("DIPLOMA"));
+        Hooks.scroll(800);
+        dataAktif.clickButtonBackRepeatData();
+    }
+
+    @When("TCC.BD.DATAAKTIF.AKSI.009 User click icon poster")
+    public void tcc_bd_dataaktif_aksi_009_user_click_icon_poster(){
+        dataAktif.clickMenuDataAktifDua();
+        Hooks.delay(1);
+        dataAktif.clickButtonPlus();
+        Hooks.delay(1);
+        dataAktif.clickIconPosterBd();
+        extentTest.log(LogStatus.PASS,"User click icon download poster");
+    }
+    @Then("TCC.BD.DATAAKTIF.AKSI.009 User has click icon poster")
+    public void tcc_bd_dataaktif_aksi_009_user_on_icon_poster(){
+        extentTest.log(LogStatus.PASS, "User has click icon poster");
+    }
+
+    @When("TCC.BD.DATAAKTIF.HAL.001 User choose halaman 2")
+    public void tcc_bd_dataaktif_hal_001_user_choose_halaman(){
+        Hooks.scroll(100);
+        dataAktif.clickButtonHal();
+        extentTest.log(LogStatus.PASS,"User choose halaman 2");
+    }
+    @Then("TCC.BD.DATAAKTIF.HAL.001 User on halaman 2")
+    public void tcc_bd_dataaktif_hal_001_user_on_halaman_2(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataAktif.getTxtHal().contains("11 to 20"));
+        extentTest.log(LogStatus.PASS,"User on halaman 2");
+    }
+    @When("TCC.BD.DATAAKTIF.HAL.002 User choose next halaman")
+    public void tcc_bd_dataaktif_hal_002_user_choose_next_halaman(){
+        Hooks.scroll(100);
+        dataAktif.clickButtonHalNext();
+        extentTest.log(LogStatus.PASS,"User choose next halaman");
+    }
+    @Then("TCC.BD.DATAAKTIF.HAL.002 User on halaman 3")
+    public void tcc_bd_dataaktif_hal_002_user_on_halaman_3(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataAktif.getTxtHal().contains("21 to 30"));
+        extentTest.log(LogStatus.PASS,"User on halaman 3");
+    }
+    @When("TCC.BD.DATAAKTIF.HAL.003 User choose previous halaman")
+    public void tcc_bd_dataaktif_hal_003_user_choose_previous_halaman(){
+        Hooks.scroll(100);
+        dataAktif.clickButtonHalPrev();
+        extentTest.log(LogStatus.PASS,"User choose previous halaman");
+    }
+    @Then("TCC.BD.DATAAKTIF.HAL.003 User on halaman 2")
+    public void tcc_bd_dataaktif_hal_003_user_on_halaman_2(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataAktif.getTxtHal().contains("11 to 20"));
+        extentTest.log(LogStatus.PASS,"User on halaman 2");
     }
 
 }

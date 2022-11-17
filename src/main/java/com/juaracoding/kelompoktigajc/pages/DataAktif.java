@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DataAktif {
     private WebDriver driver;
-    String searchValue;
+    String TxtNamaProject;
 
     public DataAktif() {
         this.driver = DriverSingleton.getDriver();
@@ -23,6 +23,8 @@ public class DataAktif {
 
     @FindBy(xpath = "//*[@id=\"content\"]/div[2]/div/ul/li[2]/a/span[2]")
     WebElement menuDataAktif;
+    @FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/ul/li[2]/a")
+    WebElement menuDataAktifDua;
 
     @FindBy(xpath = "//*[@id=\"filterStatus\"]")
     WebElement filter;
@@ -60,7 +62,7 @@ public class DataAktif {
     @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[2]")
     WebElement iconDownloadDataBd;
 
-    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[3]")
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[5]/td/ul/li/span[2]/a[3]")
     WebElement iconUpdateStatusBd;
 
     @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td/ul/li/span[2]/a[4]")
@@ -98,6 +100,38 @@ public class DataAktif {
 
     @FindBy(xpath = "//*[@id=\"status\"]")
     WebElement updateStatusStatus;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[1]/td[13]/span")
+    WebElement txtUpdateStatusValid;
+
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[4]/td[1]")
+    WebElement buttonPlusDua;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/h3")
+    WebElement txtRepeatData;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[1]/div")
+    WebElement txtRepeatdataJumlahKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[2]/div[1]")
+    WebElement txtRepeatDataKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[2]/div[2]")
+    WebElement txtrepeatDataKualifikasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[3]/div")
+    WebElement txtRepeatDataFormFrom;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[4]/div")
+    WebElement txtRepeatDataRemunerasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/a")
+    WebElement buttonBackRepeatData;
+
+    @FindBy(xpath = "//*[@id=\"table_paginate\"]/ul/li[3]/a")
+    WebElement buttonHal;
+    @FindBy(xpath = "//*[@id=\"table_next\"]/a")
+    WebElement buttonHalNext;
+    @FindBy(xpath = "//*[@id=\"table_previous\"]/a")
+    WebElement buttonHalPrev;
+    @FindBy(xpath = "//*[@id=\"table_info\"]")
+    WebElement txtHal;
+
 
     public void clickMenuRecruitment(){
         menuRecruitment.click();
@@ -225,12 +259,63 @@ public class DataAktif {
     public void clickButtonUpdateStatusBatal(){
         buttonUpdateStatusBatal.click();
     }
-    public void updateStatusStatus(){
+    public void updateStatusStatusEmpty(){
         WebElement elementSelectStatus = updateStatusStatus;
         Select status = new Select(elementSelectStatus);
         status.selectByIndex(0);
     }
+    public void updateStatusStatusValid(){
+        WebElement elementSelectStatus = updateStatusStatus;
+        Select status = new Select(elementSelectStatus);
+        status.selectByIndex(2);
+    }
     public String getTxtStatus(){
         return updateStatusStatus.getAttribute("required");
     }
+    public String getTxtUpdateStatusValid(){
+        return txtUpdateStatusValid.getText();
+    }
+    public void clickButtonPlusDua(){
+        buttonPlusDua.click();
+    }
+    public void clickIconRepeatData(){
+        iconRepeatDataBd.click();
+    }
+    public String getTxtRepeatData(){
+        return txtRepeatData.getText();
+    }
+    public String getTxtRepeatDataJumlahKebutuhan(){
+        return txtRepeatdataJumlahKebutuhan.getText();
+    }
+    public String getTxtRepeatDataKebutuhan(){
+        return txtRepeatDataKebutuhan.getText();
+    }
+    public String getTxtRepeatDataKualifikasi(){
+        return txtrepeatDataKualifikasi.getText();
+    }
+     public String getTxtRepeatDataFormFrom(){
+        return txtRepeatDataFormFrom.getText();
+    }
+     public String getTxtRepeatDataRemunerasi(){
+        return txtRepeatDataRemunerasi.getText();
+    }
+    public void clickButtonBackRepeatData(){
+        buttonBackRepeatData.click();
+    }
+    public void clickMenuDataAktifDua(){
+        menuDataAktifDua.click();
+    }
+    public void clickButtonHal(){
+        buttonHal.click();
+    }
+    public void clickButtonHalNext(){
+        buttonHalNext.click();
+    }
+    public void clickButtonHalPrev(){
+        buttonHalPrev.click();
+    }
+    public String getTxtHal(){
+        return txtHal.getText();
+    }
+
 }

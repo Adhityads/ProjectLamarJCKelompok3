@@ -45,7 +45,7 @@ public class TestLogin {
         extentTest.log(LogStatus.PASS,"User enter valid username and password");
     }
     @And("User bd click button login")
-    public void user_click_button_login(){
+    public void user_bd_click_button_login(){
         loginPage.clickBtnLogin();
         extentTest.log(LogStatus.PASS,"User click button login");
     }
@@ -84,4 +84,29 @@ public class TestLogin {
         Assert.assertEquals(openUrl.getTxtUrl(),"User Login");
         extentTest.log(LogStatus.PASS, "User bd logout success");
     }
+
+    @When("User m enter valid username and password")
+    public void user_m_enter_username_and_password(){
+        loginPage.login("m","m1");
+        extentTest.log(LogStatus.PASS,"User enter valid username and password");
+    }
+    @And("User m click button login")
+    public void user_click_button_login(){
+        loginPage.clickBtnLogin();
+        extentTest.log(LogStatus.PASS,"User click button login");
+    }
+    @Then("User m login success")
+    public void user_m_login_success(){
+        Hooks.delay(1);
+        System.out.println(loginPage.getTxtUserM());
+        Assert.assertTrue(loginPage.getTxtUserM().contains("Manager RTO"));
+        Assert.assertTrue(loginPage.getTxtUserM().contains("CECEP R"));
+        Assert.assertTrue(loginPage.getTxtUserM().contains("Master"));
+        Assert.assertTrue(loginPage.getTxtUserM().contains("Dashboard"));
+        Assert.assertTrue(loginPage.getTxtUserM().contains("Approve RRF"));
+        Assert.assertTrue(loginPage.getTxtUserM().contains("Export"));
+        Assert.assertTrue(loginPage.getTxtUserM().contains("Return Candidate"));
+        extentTest.log(LogStatus.PASS,"User login Success");
+    }
+
 }

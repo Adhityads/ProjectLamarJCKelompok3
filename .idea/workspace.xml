@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/ApproveRRF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataPengajuanM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/006.User.m.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/007.Datapengajuan.m.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/008.Datapengajuan.aksi.m.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestApproveRRF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataPengajuanM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/005.Dataaktif.aksi.bd.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/005.Dataaktif.aksi.bd.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/extent-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/extent-reports.html" afterDir="false" />
@@ -163,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668523847390</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1668613529617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668613529617</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

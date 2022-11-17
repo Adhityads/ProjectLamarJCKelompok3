@@ -36,6 +36,9 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"header\"]/ul/li/div/a")
     WebElement buttonLogout;
 
+    @FindBy(xpath = "//*[@id=\"sidebar\"]")
+    WebElement txtDashboardM;
+
     public void login(String username, String password) {
         this.username.sendKeys(username);
         this.password.sendKeys(password);
@@ -58,5 +61,8 @@ public class LoginPage {
     public void logout(){
         buttonProfil.click();
         buttonLogout.click();
+    }
+    public String getTxtUserM(){
+        return txtDashboardM.getText();
     }
 }

@@ -8,7 +8,10 @@ import io.cucumber.testng.CucumberOptions;
                 "src/main/resources/features/002.Filterbystatus.bd.feature",
                 "src/main/resources/features/003.Showentries.bd.feature",
                 "src/main/resources/features/004.Search.bd.feature",
-                "src/main/resources/features/005.Dataaktif.aksi.bd.feature"},
+                "src/main/resources/features/005.Dataaktif.aksi.bd.feature",
+                "src/main/resources/features/006.User.m.feature",
+                "src/main/resources/features/007.Datapengajuan.m.feature",
+                "src/main/resources/features/008.Datapengajuan.aksi.m.feature"},
         glue = "com.juaracoding.kelompoktigajc.step_definitions",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"})
 public class RunnerTest extends AbstractTestNGCucumberTests {
