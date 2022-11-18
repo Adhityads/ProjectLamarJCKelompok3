@@ -167,8 +167,8 @@ public class TestDataPengajuanM {
         Assert.assertTrue(dataPengajuanM.getTxtJumlahKebutuhan().contains("Jakarta"));
         Assert.assertTrue(dataPengajuanM.getTxtKebutuhan().contains("HCI"));
         Assert.assertTrue(dataPengajuanM.getTxtKebutuhan().contains("CRM OPERATOR"));
-        Assert.assertTrue(dataPengajuanM.getTxtKebutuhan().contains("Direktur"));
-        Assert.assertTrue(dataPengajuanM.getTxtKebutuhan().contains("MITRA"));
+        Assert.assertTrue(dataPengajuanM.getTxtKebutuhan().contains("Komisariss"));
+        Assert.assertTrue(dataPengajuanM.getTxtKebutuhan().contains("PKWTT"));
         extentTest.log(LogStatus.PASS,"User on view data");
     }
     @When("TCC.M.PENGAJUAN.AKSI.008 User click expand window")
@@ -198,4 +198,217 @@ public class TestDataPengajuanM {
     public void tcc_m_pengajuan_aksi_010_user_hide_window(){
         extentTest.log(LogStatus.PASS,"User hide jumlah kebutuhan window");
     }
+    @When("TCC.M.PENGAJUAN.AKSI.011 User click expand window")
+    public void tcc_m_pengajuan_aksi_011_user_click_expand_window(){
+        dataPengajuanM.clickExpandKebutuhan();
+        extentTest.log(LogStatus.PASS,"User click expand kebutuhan window");
     }
+    @Then("TCC.M.PENGAJUAN.AKSI.011 User show full window")
+    public void tcc_m_pengajuan_aksi_011_user_show_expand_window(){
+        extentTest.log(LogStatus.PASS,"User show full kebutuhan window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.012 User click expand window")
+    public void tcc_m_pengajuan_aksi_012_user_click_expand_window(){
+        dataPengajuanM.clickExpandKebutuhan();
+        extentTest.log(LogStatus.PASS,"User click expand kebutuhan window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.012 User show smaller window")
+    public void tcc_m_pengajuan_aksi_012_user_show_smaller_window(){
+        extentTest.log(LogStatus.PASS,"User show smaller kebutuhan window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.013 User click collapse window")
+    public void tcc_m_pengajuan_aksi_013_user_click_expand_window(){
+        dataPengajuanM.clickHideKebutuhan();
+        extentTest.log(LogStatus.PASS,"User click collapse kebutuhan window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.013 User hide window")
+    public void tcc_m_pengajuan_aksi_013_user_hide_window(){
+        extentTest.log(LogStatus.PASS,"User hide kebutuhan window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.014 User click expand window")
+    public void tcc_m_pengajuan_aksi_014_user_click_expand_window(){
+        dataPengajuanM.clickExpandKualifikasi();
+        extentTest.log(LogStatus.PASS,"User click expand kualifkasi window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.014 User show full window")
+    public void tcc_m_pengajuan_aksi_014_user_show_expand_window(){
+        extentTest.log(LogStatus.PASS,"User show full kualifikasi window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.015 User click expand window")
+    public void tcc_m_pengajuan_aksi_015_user_click_expand_window(){
+        dataPengajuanM.clickExpandKualifikasi();
+        extentTest.log(LogStatus.PASS,"User click expand kualifkasi window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.015 User show smaller window")
+    public void tcc_m_pengajuan_aksi_015_user_show_smaller_window(){
+        extentTest.log(LogStatus.PASS,"User show smaller kualifkasi window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.016 User click collapse window")
+    public void tcc_m_pengajuan_aksi_016_user_click_expand_window(){
+        dataPengajuanM.clickHideKualifikasi();
+        extentTest.log(LogStatus.PASS,"User click collapse kualifkasi window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.016 User hide window")
+    public void tcc_m_pengajuan_aksi_016_user_hide_window(){
+        extentTest.log(LogStatus.PASS,"User hide kualifkasi window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.017 User click expand window")
+    public void tcc_m_pengajuan_aksi_017_user_click_expand_window(){
+        Hooks.delay(1);
+        dataPengajuanM.clickExpandForm();
+        extentTest.log(LogStatus.PASS,"User click expand form window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.017 User show full window")
+    public void tcc_m_pengajuan_aksi_017_user_show_expand_window(){
+        extentTest.log(LogStatus.PASS,"User show full form window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.018 User click expand window")
+    public void tcc_m_pengajuan_aksi_018_user_click_expand_window(){
+        dataPengajuanM.clickExpandForm();
+        extentTest.log(LogStatus.PASS,"User click expand form window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.018 User show smaller window")
+    public void tcc_m_pengajuan_aksi_018_user_show_smaller_window(){
+        extentTest.log(LogStatus.PASS,"User show smaller form window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.019 User click collapse window")
+    public void tcc_m_pengajuan_aksi_019_user_click_expand_window(){
+        dataPengajuanM.clickHideForm();
+        extentTest.log(LogStatus.PASS,"User click collapse form window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.019 User hide window")
+    public void tcc_m_pengajuan_aksi_019_user_hide_window(){
+        extentTest.log(LogStatus.PASS,"User hide form window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.020 User click expand window")
+    public void tcc_m_pengajuan_aksi_020_user_click_expand_window(){
+        Hooks.delay(1);
+        dataPengajuanM.clickExpandRemunerasi();
+        extentTest.log(LogStatus.PASS,"User click expand remunerasi window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.020 User show full window")
+    public void tcc_m_pengajuan_aksi_020_user_show_expand_window(){
+        extentTest.log(LogStatus.PASS,"User show full remunerasi window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.021 User click expand window")
+    public void tcc_m_pengajuan_aksi_021_user_click_expand_window(){
+        Hooks.delay(1);
+        dataPengajuanM.clickExpandRemunerasi();
+        extentTest.log(LogStatus.PASS,"User click expand remunerasi window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.021 User show smaller window")
+    public void tcc_m_pengajuan_aksi_021_user_show_smaller_window(){
+        extentTest.log(LogStatus.PASS,"User show smaller remunerasi window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.022 User click collapse window")
+    public void tcc_m_pengajuan_aksi_022_user_click_expand_window(){
+        dataPengajuanM.clickHideRemunerasi();
+        extentTest.log(LogStatus.PASS,"User click collapse remunerasi window");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.022 User hide window")
+    public void tcc_m_pengajuan_aksi_022_user_hide_window(){
+        extentTest.log(LogStatus.PASS,"User hide remunerasi window");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.023 User click button back")
+    public void tcc_m_pengajuan_aksi_023_user_click_button_back(){
+        Hooks.delay(2);
+        dataPengajuanM.clickButtonBackViewData();
+        extentTest.log(LogStatus.PASS,"User click button back");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.023 User has click button back")
+    public void tcc_m_pengajuan_aksi_023_user_has_click_button_back(){
+        Hooks.delay(2);
+        System.out.println(dataPengajuanM.getTxtTable());
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("HCI"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("DANA"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("BCA"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("Perfios"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("DIGITAL MIND"));
+        extentTest.log(LogStatus.PASS,"User has click button back");
+    }
+
+    @When("TCC.M.PENGAJUAN.AKSI.024 User click icon return")
+    public void tcc_m_pengajuan_aksi_024_user_click_icon_return(){
+        dataPengajuanM.clickIconReturn();
+        extentTest.log(LogStatus.PASS,"User click icon return");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.024 User show form")
+    public void tcc_m_pengajuan_aksi_024_user_show_form(){
+        Hooks.delay(1);
+        Assert.assertEquals(dataPengajuanM.getTxtFormReturn(),"Update Status");
+        extentTest.log(LogStatus.PASS,"User show return form");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.027 User click batal")
+    public void tcc_m_pengajuan_aksi_025_user_click_batal(){
+        dataPengajuanM.clickButtonBatalFormReturn();
+        extentTest.log(LogStatus.PASS,"User click batal");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.027 User has click batal")
+    public void tcc_m_pengajuan_aksi_025_user_has_click_batal(){
+        Hooks.delay(1);
+        System.out.println(dataPengajuanM.getTxtTable());
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("HCI"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("DANA"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("BCA"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("Perfios"));
+        Assert.assertTrue(dataPengajuanM.getTxtTable().contains("DIGITAL MIND"));
+        extentTest.log(LogStatus.PASS,"User has click batal");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.026 User return with empty note")
+    public void tcc_m_pengajuan_aksi_026_user_return_with_empty_note(){
+        dataPengajuanM.clickIconReturn();
+        Hooks.delay(1);
+        dataPengajuanM.clickButtonUpdateFromReturn();
+        extentTest.log(LogStatus.PASS,"User return with empty note");
+    }
+    @Then("TCC.M.PENGAJUAN.AKSI.026 User get success message")
+    public void tcc_m_pengajuan_aksi_026_user_get_success_message(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataPengajuanM.getTxtSuccess().contains("Berhasi"));
+        extentTest.log(LogStatus.PASS,"User get success message");
+    }
+    @When("TCC.M.PENGAJUAN.AKSI.025 User return with note")
+    public void tcc_m_pengajuan_aksi_025_user_return_with_note(){
+        dataPengajuanM.clickIconReturn();
+        Hooks.delay(1);
+        dataPengajuanM.setTxtNoteReturn("Tambahan");
+        extentTest.log(LogStatus.PASS,"User return with empty note");
+    }
+    @And("TCC.M.PENGAJUAN.AKSI.025 User click button update")
+    public void tcc_m_pengajuan_aksi_025_user_click_button_update(){
+        dataPengajuanM.clickButtonUpdateFromReturn();
+        extentTest.log(LogStatus.PASS,"User click button update");
+    }
+
+    @Then("TCC.M.PENGAJUAN.AKSI.025 User get success message")
+    public void tcc_m_pengajuan_aksi_025_user_get_success_message(){
+        Hooks.delay(1);
+        Assert.assertTrue(dataPengajuanM.getTxtSuccess().contains("Berhasi"));
+        extentTest.log(LogStatus.PASS,"User get success message");
+    }
+    @When("TCC.M.PENGAJUAN.HAL.001 User choose halaman")
+    public void tcc_m_pengajuan_hal_001_user_pilih_halaman(){
+        extentTest.log(LogStatus.PASS,"User choose halaman");
+    }
+    @Then("TCC.M.PENGAJUAN.HAL.001 User on halaman")
+    public void tcc_m_pengajuan_hal_001_user_on_halaman(){
+        extentTest.log(LogStatus.PASS,"User on halaman");
+    }
+    @When("TCC.M.PENGAJUAN.HAL.002 User choose next halaman")
+    public void tcc_m_pengajuan_hal_002_user_choose_halaman(){
+        extentTest.log(LogStatus.PASS,"User choose next halaman");
+    }
+    @Then("TCC.M.PENGAJUAN.HAL.002 User on next halaman")
+    public void tcc_m_pengajuan_hal_002_user_on_halaman(){
+        extentTest.log(LogStatus.PASS,"User on next halaman");
+    }
+    @When("TCC.M.PENGAJUAN.HAL.003 User choose halaman")
+    public void tcc_m_pengajuan_hal_003_user_choose_halaman(){
+        extentTest.log(LogStatus.PASS,"User pilih halaman");
+    }
+    @Then("TCC.M.PENGAJUAN.HAL.003 User on halaman")
+    public void tcc_m_pengajuan_hal_003_user_on_halaman(){
+        extentTest.log(LogStatus.PASS,"User on halaman");
+    }
+
+}

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Update" />
+    <list default="true" id="9e1c6dcc-020e-4eec-9b40-67dd6b48e30f" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktifM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/009.Dataaktif.m.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktifM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataPengajuanM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataPengajuanM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/008.Datapengajuan.aksi.m.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/008.Datapengajuan.aksi.m.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataPengajuanM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataPengajuanM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/extent-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/extent-reports.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RunnerTest.runScenario" />
         <item itemvalue="TestNG.RunnerTest" />
+        <item itemvalue="TestNG.RunnerTest.runScenario" />
         <item itemvalue="Cucumber Java.Scenario: User invalid login" />
-        <item itemvalue="TestNG.RunnerTest" />
         <item itemvalue="TestNG.RunnerTest.runScenario" />
+        <item itemvalue="TestNG.RunnerTest" />
       </list>
     </recent_temporary>
   </component>

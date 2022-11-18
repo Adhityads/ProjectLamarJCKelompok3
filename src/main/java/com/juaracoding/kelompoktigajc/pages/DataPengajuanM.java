@@ -54,6 +54,37 @@ public class DataPengajuanM {
     WebElement hideJumlahKebutuhan;
     @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[1]/div/div/div[1]/div/a[1]")
     WebElement expandJumlahKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/div[2]/div/div[1]/div/a[2]")
+    WebElement hideKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/div[2]/div/div[1]/div/a[1]")
+    WebElement expandKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/div[3]/div/div[1]/div/a[1]")
+    WebElement expandKualifikasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/div[3]/div/div[1]/div/a[2]")
+    WebElement hideKualifikasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[3]/div/div/div[1]/div/a[1]")
+    WebElement expandForm;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[3]/div/div/div[1]/div/a[2]")
+    WebElement hideForm;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[4]/div/div/div[1]/div/a[1]")
+    WebElement expandRemunerasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[4]/div/div/div[1]/div/a[2]")
+    WebElement hideRemunerasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/a[2]")
+    WebElement buttonBackViewData;
+
+    @FindBy(xpath = "//*[@id=\"dataTable-setup\"]/tbody/tr[4]/td[8]/center/div/a[3]")
+    WebElement iconReturn;
+    @FindBy(xpath = "//*[@id=\"Modal_Return\"]/div/div/div/h5")
+    WebElement txtFormReturn;
+    @FindBy(xpath = "//*[@id=\"batal\"]")
+    WebElement buttonBatalFormReturn;
+    @FindBy(xpath = "//*[@id=\"Modal_Return\"]/div/div/form/div[2]/button[1]")
+    WebElement buttonUpdateFormReturn;
+    @FindBy(xpath = "//*[@id=\"note\"]")
+    WebElement txtNoteReturn;
+    @FindBy(xpath = "//*[@id=\"alert\"]")
+    WebElement txtSuccess;
 
 
 
@@ -133,6 +164,52 @@ public class DataPengajuanM {
     }
     public void clickExpandJumlahKebutuhan(){
         expandJumlahKebutuhan.click();
+    }
+    public void clickHideKebutuhan(){
+        hideKebutuhan.click();
+    }
+    public void clickExpandKebutuhan(){
+        expandKebutuhan.click();
+    }
+    public void clickHideKualifikasi(){
+        hideKualifikasi.click();
+    }
+    public void clickExpandKualifikasi(){
+        expandKualifikasi.click();
+    }
+    public void clickExpandForm(){
+        expandForm.click();
+    }
+    public void clickHideForm(){
+        hideForm.click();
+    }
+    public void clickExpandRemunerasi(){
+        expandRemunerasi.click();
+    }
+    public void clickHideRemunerasi(){
+        hideRemunerasi.click();
+    }
+    public void clickButtonBackViewData(){
+        buttonBackViewData.click();
+    }
+
+    public void clickIconReturn(){
+        iconReturn.click();
+    }
+    public String getTxtFormReturn(){
+        return txtFormReturn.getText();
+    }
+    public void clickButtonBatalFormReturn(){
+        buttonBatalFormReturn.click();
+    }
+    public void clickButtonUpdateFromReturn(){
+        buttonUpdateFormReturn.click();
+    }
+    public void setTxtNoteReturn(String note){
+        txtNoteReturn.sendKeys(note);
+    }
+    public String getTxtSuccess(){
+        return txtSuccess.getText();
     }
 
 }
