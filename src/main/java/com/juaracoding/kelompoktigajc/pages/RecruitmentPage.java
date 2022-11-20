@@ -1,14 +1,12 @@
 package com.juaracoding.kelompoktigajc.pages;
 
 import com.juaracoding.kelompoktigajc.drivers.DriverSingleton;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -42,11 +40,14 @@ public class RecruitmentPage {
     WebElement btnFilter;
     @FindBy(xpath = "//button[@id='btn-reset']")
     WebElement btnReset;
-
     @FindBy(xpath = "//*[@id=\"table_filter\"]/label/input")
     WebElement clickSearch;
     @FindBy(xpath = "//*[@id=\"btnSearch\"]")
     WebElement btnSearch;
+    @FindBy(xpath = "//span[@id='btnRefresh']")
+    WebElement btnResetSearch;
+    @FindBy(xpath = "//select[@name='table_length']")
+    WebElement clickShowEntries;
 
 
 
@@ -59,8 +60,9 @@ public class RecruitmentPage {
     List<WebElement> txtDataPengajuan;
     @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr/td")
     WebElement txtFilterApprove;
-    @FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[1]/td[6]/span")
+    @FindBy(xpath = "//*[@id=\"table\"]/tbody")
     WebElement txtFilter;
+
 
     //-----------------------------------------------------------------------------------------------//
 
@@ -70,6 +72,12 @@ public class RecruitmentPage {
     }
     public void MenuDataPengajuan(){
         menuDataPengajuan.click();
+    }
+    public void FilterByDefault(){
+        clickFilter.click();
+        Delay(2);
+        listbtnFilter.get(0).click();
+        btnFilter.click();
     }
     public void FilterByApprove(){
         //WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -101,16 +109,42 @@ public class RecruitmentPage {
         btnReset.click();
         clickSearch.click();
     }
-    public void inputValidSearch(){
+    public void inputValidSearch(String searchValid){
         Delay(2);
-        clickSearch.sendKeys("Ka");
+        clickSearch.sendKeys(searchValid);
         btnSearch.click();
     }
-    public void inputInvalidSearch(){
+    public void inputInvalidSearch(String searchInvalid){
         Delay(2);
-        clickSearch.sendKeys("@&*");
+        clickSearch.sendKeys(searchInvalid);
         btnSearch.click();
     }
+    public void showDataSepuluhDataPengajuan(){
+        btnResetSearch.click();
+        Delay(2);
+        WebElement elementSelectShowentries = clickShowEntries;
+        Select showentries = new Select(elementSelectShowentries);
+        showentries.selectByIndex(0);
+    }
+    public void showDatadualimaDataPengajuan(){
+        Delay(2);
+        WebElement elementSelectShowentries = clickShowEntries;
+        Select showentries = new Select(elementSelectShowentries);
+        showentries.selectByIndex(1);
+    }
+    public void showDatalimapuluhDataPengajuan(){
+        Delay(2);
+        WebElement elementSelectShowentries = clickShowEntries;
+        Select showentries = new Select(elementSelectShowentries);
+        showentries.selectByIndex(2);
+    }
+    public void showDataseratusDataPengajuan(){
+        Delay(2);
+        WebElement elementSelectShowentries = clickShowEntries;
+        Select showentries = new Select(elementSelectShowentries);
+        showentries.selectByIndex(3);
+    }
+
 
 
     //------------------------------------------------------------------------------------------------//
@@ -130,7 +164,12 @@ public class RecruitmentPage {
         Delay(2);
         return txtFilterApprove.getText();
     }
-
+    public int getIntTxtShowEntries(){
+        Delay(2);
+        List<WebElement> rows = txtFilter.findElements(By.tagName("tr"));
+        int row = rows.size();
+        return row;
+    }
 
 
 

@@ -4,77 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Second Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/02.Dashboard.feature" afterDir="false" />
+    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Thrid Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_Login_20221111094024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_Login_20221111094642.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_Login_20221111112741.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_Login_20221114035803.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_Login_20221114094628.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111093030.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111093600.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111093905.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111094026.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111094222.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111094310.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111094436.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111094548.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111094644.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111112752.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111112950.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221111114111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114035306.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114035805.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114041626.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114043130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114043935.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114044331.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114044430.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114044541.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114045437.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114083730.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114083820.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114084019.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114084302.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114084454.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114084649.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114084928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114085235.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114085341.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114085457.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114085612.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114091225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114091326.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114091359.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114091453.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114091548.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114091720.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114092545.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114093808.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114094359.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114094520.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114094629.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114094744.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114094913.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114095048.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114095154.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114101326.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114101423.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114101607.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114112755.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114113123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114113447.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114113912.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114114040.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114114233.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshot/User_go_to_recruitment_20221114114616.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/RecruitmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/RecruitmentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/02.Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/02.Dashboard.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/03.Recruitment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/03.Recruitment.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestRecruitment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestRecruitment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668427456466</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Thrid Commit">
+      <created>1668591204737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668591204738</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Master" />
     <MESSAGE value="Second Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
+    <MESSAGE value="Thrid Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thrid Commit" />
   </component>
 </project>

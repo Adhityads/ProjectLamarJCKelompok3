@@ -45,17 +45,19 @@ public class TestRecruitment {
         extentTest.log(LogStatus.PASS,"User show data pengajuan");
     }
     //-------------------------------------------------------------------------------------//
-    @When("User click filter status approve")
-    public void user_click_filter_status_approve(){
-        recruitmentPage.FilterByApprove();
-        extentTest.log(LogStatus.FAIL,"User click filter status approve");
-    }
-    @Then("User show data approve")
-    public void user_show_data_approve(){
-        //System.out.println(recruitmentPage.getTxtFilter());
-        Assert.assertEquals(recruitmentPage.getTxtFilterApprove(),"No matching records found");
-        extentTest.log(LogStatus.FAIL,"User show data approve");
-    }
+
+
+//    @When("User click filter status approve")
+//    public void user_click_filter_status_approve(){
+//        recruitmentPage.FilterByApprove();
+//        extentTest.log(LogStatus.FAIL,"User click filter status approve");
+//    }
+//    @Then("User show data approve")
+//    public void user_show_data_approve(){
+//        //System.out.println(recruitmentPage.getTxtFilter());
+//        Assert.assertEquals(recruitmentPage.getTxtFilterApprove(),"No matching records found");
+//        extentTest.log(LogStatus.FAIL,"User show data approve");
+//    }
     @When("User click filter status pending")
     public void user_click_filter_status_pending(){
         recruitmentPage.FilterByPending();
@@ -64,7 +66,8 @@ public class TestRecruitment {
     @Then("User show data pending")
     public void user_show_data_pending(){
         System.out.println(recruitmentPage.getTxtFilter());
-        Assert.assertEquals(recruitmentPage.getTxtFilter(),"PENDING");
+        //Assert.assertEquals(recruitmentPage.getTxtFilter(),"PENDING");
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("PENDING"));
         extentTest.log(LogStatus.PASS,"User show data pending");
     }
     @When("User click filter status return")
@@ -75,7 +78,8 @@ public class TestRecruitment {
     @Then("User show data return")
     public void user_show_data_return(){
         System.out.println(recruitmentPage.getTxtFilter());
-        Assert.assertEquals(recruitmentPage.getTxtFilter(),"RETURN");
+        //Assert.assertEquals(recruitmentPage.getTxtFilter(),"RETURN");
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("RETURN"));
         extentTest.log(LogStatus.PASS,"User show data return");
     }
     @When("User click filter status cancel")
@@ -86,36 +90,53 @@ public class TestRecruitment {
     @Then("User show data cancel")
     public void user_show_data_cancel(){
         System.out.println(recruitmentPage.getTxtFilter());
-        Assert.assertEquals(recruitmentPage.getTxtFilter(),"CANCEL");
+        //Assert.assertEquals(recruitmentPage.getTxtFilter(),"CANCEL");
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("CANCEL"));
         extentTest.log(LogStatus.PASS,"User show data cancel");
     }
+    @When("User click filter status default")
+    public void user_click_filter_status_default(){
+        recruitmentPage.FilterByDefault();
+        extentTest.log(LogStatus.PASS,"User click filter status default");
+    }
+    @Then("User show data default")
+    public void user_show_data_default(){
+        System.out.println(recruitmentPage.getTxtFilter());
+        //Assert.assertEquals(recruitmentPage.getTxtFilter(),"PENDING");
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("PENDING"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("RETURN"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("CANCEL"));
+        extentTest.log(LogStatus.PASS,"User show data default");
+    }
 
-    @When("User Click input data search")
-    public void user_click_input_data_search(){
+    @When("User Click input data search valid")
+    public void user_click_input_data_search_valid(){
         recruitmentPage.klikInputSeach();
-        extentTest.log(LogStatus.PASS,"User Click input data search");
+        extentTest.log(LogStatus.PASS,"User Click input data search valid");
     }
-    @And("User input data and Click search")
-    public void user_input_data_and_click_search(){
-        recruitmentPage.inputValidSearch();
-        extentTest.log(LogStatus.PASS,"User input data and Click search");
+    @And("User input data and Click search valid")
+    public void user_input_data_and_click_search_valid(){
+        recruitmentPage.inputValidSearch("ka");
+        extentTest.log(LogStatus.PASS,"User input data and Click search valid");
     }
-
     @Then("User Show data search valid")
     public void user_show_data_search_valid(){
         System.out.println(recruitmentPage.getTxtFilter());
-        Assert.assertEquals(recruitmentPage.getTxtFilter(),"RETURN");
+//        Assert.assertEquals(recruitmentPage.getTxtFilter(),"RETRUN");
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("RETURN"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("PENDING"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("CANCEL"));
         extentTest.log(LogStatus.PASS,"User Show data search valid");
     }
 
     @When("User Click input data search invalid")
     public void user_click_input_data_search_invalid(){
         recruitmentPage.klikInputSeach();
-        extentTest.log(LogStatus.PASS,"User Click input data search imvalid");
+        extentTest.log(LogStatus.PASS,"User Click input data search invalid");
     }
     @And("User input data and Click search invalid")
     public void user_input_data_and_click_search_invalid(){
-        recruitmentPage.inputInvalidSearch();
+        recruitmentPage.inputInvalidSearch("@#");
         extentTest.log(LogStatus.PASS,"User input data and Click search invalid");
     }
 
@@ -124,6 +145,51 @@ public class TestRecruitment {
         System.out.println(recruitmentPage.getTxtFilterApprove());
         Assert.assertEquals(recruitmentPage.getTxtFilterApprove(),"No matching records found");
         extentTest.log(LogStatus.PASS,"User Show data search invalid");
+    }
+    @When("User click show entries sepuluh")
+    public void User_click_show_entries_sepuluh(){
+        recruitmentPage.showDataSepuluhDataPengajuan();
+        extentTest.log(LogStatus.PASS,"User click show entries sepuluh");
+    }
+    @Then("User show sepuluh entries")
+    public void user_show_sepuluh_entries() {
+        System.out.println(recruitmentPage.getIntTxtShowEntries());
+        Assert.assertTrue(recruitmentPage.getIntTxtShowEntries()==10);
+        extentTest.log(LogStatus.PASS, "User show sepuluh entries");
+    }
+    @When("User click show entries dualima")
+    public void User_click_show_entries_dualima(){
+        recruitmentPage.showDatadualimaDataPengajuan();
+        extentTest.log(LogStatus.PASS,"User click show entries dualima");
+    }
+    @Then("User show dualima entries")
+    public void user_show_dualima_entries() {
+        System.out.println(recruitmentPage.getIntTxtShowEntries());
+        Assert.assertTrue(recruitmentPage.getIntTxtShowEntries()==25);
+        extentTest.log(LogStatus.PASS, "User show dualima entries");
+    }
+
+    @When("User click show entries limapuluh")
+    public void User_click_show_entries_limapuluh(){
+        recruitmentPage.showDatalimapuluhDataPengajuan();
+        extentTest.log(LogStatus.PASS,"User click show entries limapuluh");
+    }
+    @Then("User show limapuluh entries")
+    public void user_show_limapuluh_entries() {
+        System.out.println(recruitmentPage.getIntTxtShowEntries());
+        Assert.assertTrue(recruitmentPage.getIntTxtShowEntries()==50);
+        extentTest.log(LogStatus.PASS, "User show limapuluh entries");
+    }
+    @When("User click show entries seratus")
+    public void User_click_show_entries_seratus(){
+        recruitmentPage.showDataseratusDataPengajuan();
+        extentTest.log(LogStatus.PASS,"User click show entries seratus");
+    }
+    @Then("User show seratus entries")
+    public void user_show_seratus_entries() {
+        System.out.println(recruitmentPage.getIntTxtShowEntries());
+        Assert.assertTrue(recruitmentPage.getIntTxtShowEntries()==100);
+        extentTest.log(LogStatus.PASS, "User show seratus entries");
     }
 
 }

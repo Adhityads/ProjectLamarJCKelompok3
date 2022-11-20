@@ -43,12 +43,16 @@ public class DashboardPage {
 
     }
     public void viewDetailDataSepuluh(){
+        btnBack.click();
         viewDataSepuluh.click();
         Delay(5);
 
     }
+
     public void viewDetailDataEmpatBelas(){
+        btnBack.click();
         viewDataEmpatBelas.click();
+        Delay(5);
     }
 
     public String getTxtDetailData(){
