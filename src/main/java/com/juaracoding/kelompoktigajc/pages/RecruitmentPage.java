@@ -1,7 +1,9 @@
 package com.juaracoding.kelompoktigajc.pages;
 
 import com.juaracoding.kelompoktigajc.drivers.DriverSingleton;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.logging.XMLFormatter;
 
 public class RecruitmentPage {
     private WebDriver driver;
@@ -48,6 +51,67 @@ public class RecruitmentPage {
     WebElement btnResetSearch;
     @FindBy(xpath = "//select[@name='table_length']")
     WebElement clickShowEntries;
+    @FindBy(xpath = "//*[@id=\"content\"]/h1/a")
+    WebElement btnTambah;
+    @FindBy(xpath = "//*[@id=\"add_form_kebutuhan\"]/div/div[1]/div/select")
+    WebElement penempatan;
+    @FindBy(xpath = "//*[@id=\"add_form_kebutuhan\"]/div/div[2]/div/input")
+    WebElement jumlahKebutuhan;
+    @FindBy(xpath = "//*[@id=\"select2-Project_Name-container\"]")
+    WebElement projectName;
+    @FindBy(xpath = "//*[@id=\"Active_Date\"]")
+    WebElement tanggalAktif;
+    @FindBy(xpath = "//*[@id=\"Expired_Date\"]")
+    WebElement tanggalBerakhir;
+    @FindBy(xpath = "//*[@id=\"select2-Position_Name-container\"]")
+    WebElement namaPosisi;
+    @FindBy(xpath = "//*[@id=\"select2-Contract_Status-container\"]")
+    WebElement statusKontrak;
+    @FindBy(xpath = "//*[@id=\"Working_Days\"]")
+    WebElement hariKerja;
+    @FindBy(xpath = "//*[@id=\"select2-Working_Hours-container\"]")
+    WebElement jamKerja;
+    @FindBy(xpath = "//*[@id=\"Job_Description\"]")
+    WebElement jobDesc;
+    @FindBy(xpath = "//*[@id=\"file\"]")
+    WebElement chooseFile;
+    @FindBy(xpath = "//*[@id=\"select2-Gender-container\"]")
+    WebElement gender;
+    @FindBy(xpath = "//*[@id=\"select2-Education-container\"]")
+    WebElement education;
+    @FindBy(xpath = "//*[@id=\"Min_Age\"]")
+    WebElement usiaMin;
+    @FindBy(xpath = "//*[@id=\"Max_Age\"]")
+    WebElement usiaMax;
+    @FindBy(xpath = "//*[@id=\"Appearances\"]")
+    WebElement penampilan;
+    @FindBy(xpath = "//*[@id=\"Experiences\"]")
+    WebElement pengalaman;
+    @FindBy(xpath = "//*[@id=\"select2-English_Skills-container\"]")
+    WebElement english;
+    @FindBy(xpath = "//*[@id=\"Others_Ability\"]")
+    WebElement komputer;
+    @FindBy(xpath = "//*[@id=\"Others_Qualifications\"]")
+    WebElement lainnya;
+    @FindBy(xpath = "//*[@id=\"select2-Division-container\"]")
+    WebElement divisi;
+    @FindBy(xpath = "//*[@id=\"select2-Departement-container\"]")
+    WebElement department;
+    @FindBy(xpath = "//*[@id=\"select2-Unit-container\"]")
+    WebElement unit;
+    @FindBy(xpath = "//*[@id=\"select2-Unit-container\"]")
+    WebElement level;
+    @FindBy(xpath = "//*[@id=\"select2-Upliner-container\"]")
+    WebElement upliner;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[4]/div/div/div[2]/div[1]/div[2]/input")
+    WebElement btnAdd;
+    @FindBy(xpath = "//*[@id=\"note2\"]")
+    WebElement nominal;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/button")
+    WebElement btnSubmitForm;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/a")
+    WebElement btnBackForm;
+
 
 
 
@@ -62,6 +126,16 @@ public class RecruitmentPage {
     WebElement txtFilterApprove;
     @FindBy(xpath = "//*[@id=\"table\"]/tbody")
     WebElement txtFilter;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[1]/div")
+    WebElement txtJumlahKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[2]/div[1]")
+    WebElement txtKebutuhan;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[2]/div[2]")
+    WebElement txtKualfikasi;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[3]/div")
+    WebElement txtForm;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[4]/div")
+    WebElement txtRemunerasi;
 
 
     //-----------------------------------------------------------------------------------------------//
@@ -119,6 +193,9 @@ public class RecruitmentPage {
         clickSearch.sendKeys(searchInvalid);
         btnSearch.click();
     }
+    public void clickResetSearch(){
+        btnResetSearch.click();
+    }
     public void showDataSepuluhDataPengajuan(){
         btnResetSearch.click();
         Delay(2);
@@ -143,6 +220,14 @@ public class RecruitmentPage {
         WebElement elementSelectShowentries = clickShowEntries;
         Select showentries = new Select(elementSelectShowentries);
         showentries.selectByIndex(3);
+    }
+    public void clickBtnTambah(){
+        btnTambah.click();
+    }
+    public void setPenempatan() {
+        WebElement elementSelectPenempatan = penempatan;
+        Select penempatan = new Select(elementSelectPenempatan);
+        penempatan.selectByIndex(3);
     }
 
 
@@ -169,6 +254,21 @@ public class RecruitmentPage {
         List<WebElement> rows = txtFilter.findElements(By.tagName("tr"));
         int row = rows.size();
         return row;
+    }
+    public String getTxtJumlahKebutuhan(){
+        return txtJumlahKebutuhan.getText();
+    }
+    public String getTxtKebutuhan(){
+        return txtKebutuhan.getText();
+    }
+    public String getTxtKualifikasi(){
+        return txtKualfikasi.getText();
+    }
+    public String getTxtForm(){
+        return txtForm.getText();
+    }
+    public String getTxtRemunerasi(){
+        return txtRemunerasi.getText();
     }
 
 

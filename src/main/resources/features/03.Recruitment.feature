@@ -37,6 +37,10 @@ Feature: Menu Recruitment
     And  User input data and Click search invalid
     Then User Show data search invalid
 
+  Scenario: TCC.BD.SEARCH.003
+    When TCC.BD.SEARCH.003 User refresh search
+    Then TCC.BD.SEARCH.003 user show refresh search
+
   Scenario: TCC.BD.SHOWENTRIES.001
     When User click show entries sepuluh
     Then User show sepuluh entries
@@ -47,8 +51,16 @@ Feature: Menu Recruitment
 
   Scenario: TCC.BD.SHOWENTRIES.003
     When User click show entries limapuluh
-    Then User show limapuluh  entries
+    Then User show limapuluh entries
 
   Scenario: TCC.BD.SHOWENTRIES.004
     When User click show entries seratus
     Then User show seratus entries
+
+  Scenario: TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001
+    When TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001 User click button tambah
+    Then TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001 User on form tambah data
+
+  Scenario: TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002
+    When TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user fill penempatan
+    Then TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user filled penempatan

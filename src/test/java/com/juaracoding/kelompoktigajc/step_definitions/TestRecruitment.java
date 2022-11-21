@@ -77,6 +77,7 @@ public class TestRecruitment {
     }
     @Then("User show data return")
     public void user_show_data_return(){
+        Hooks.delay(1);
         System.out.println(recruitmentPage.getTxtFilter());
         //Assert.assertEquals(recruitmentPage.getTxtFilter(),"RETURN");
         Assert.assertTrue(recruitmentPage.getTxtFilter().contains("RETURN"));
@@ -146,6 +147,20 @@ public class TestRecruitment {
         Assert.assertEquals(recruitmentPage.getTxtFilterApprove(),"No matching records found");
         extentTest.log(LogStatus.PASS,"User Show data search invalid");
     }
+    @When("TCC.BD.SEARCH.003 User refresh search")
+    public void tcc_bd_search_003_user_refresh_search(){
+        recruitmentPage.clickResetSearch();
+        extentTest.log(LogStatus.PASS,"User click refresh search");
+    }
+    @Then("TCC.BD.SEARCH.003 user show refresh search")
+    public void tcc_bd_search_003_user_show_refresh_search(){
+        Hooks.delay(1);
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("HCI"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("BCA"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("FINACCEL"));
+        Assert.assertTrue(recruitmentPage.getTxtFilter().contains("GLOBAL"));
+        extentTest.log(LogStatus.PASS,"User show refresh search");
+    }
     @When("User click show entries sepuluh")
     public void User_click_show_entries_sepuluh(){
         recruitmentPage.showDataSepuluhDataPengajuan();
@@ -191,5 +206,28 @@ public class TestRecruitment {
         Assert.assertTrue(recruitmentPage.getIntTxtShowEntries()==100);
         extentTest.log(LogStatus.PASS, "User show seratus entries");
     }
-
+    @When("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001 User click button tambah")
+    public void tcc_bd_tambah_jumlah_kebutuhan_001_user_click_button_tambah(){
+        recruitmentPage.clickBtnTambah();
+        extentTest.log(LogStatus.PASS,"User click button tambah");
+    }
+    @Then("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001 User on form tambah data")
+    public void tcc_bd_tambah_jumlah_kebutuhan_001_user_on_form_tambah_data(){
+        Hooks.delay(1);
+        Assert.assertTrue(recruitmentPage.getTxtJumlahKebutuhan().contains("Jumlah Kebutuhan"));
+        Assert.assertTrue(recruitmentPage.getTxtKebutuhan().contains("Kebutuhan"));
+        Assert.assertTrue(recruitmentPage.getTxtKualifikasi().contains("Kualifikasi"));
+        Assert.assertTrue(recruitmentPage.getTxtForm().contains("Form"));
+        Assert.assertTrue(recruitmentPage.getTxtRemunerasi().contains("Remunerasi"));
+        extentTest.log(LogStatus.PASS,"User on form tambah data");
+    }
+    @When("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user fill penempatan")
+    public void tcc_bd_tambah_jumlahkebutuhan_002_user_fill_penempatan(){
+        recruitmentPage.setPenempatan();
+        extentTest.log(LogStatus.PASS,"User fill valid penempatan");
+    }
+    @Then("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user filled penempatan")
+    public void tcc_bd_tambah_jumlahkebutuhan_002_user_filled_penempatan(){
+        extentTest.log(LogStatus.PASS,"user filled penempatan");
+    }
 }
