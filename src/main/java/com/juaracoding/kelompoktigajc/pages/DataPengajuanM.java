@@ -86,6 +86,9 @@ public class DataPengajuanM {
     @FindBy(xpath = "//*[@id=\"alert\"]")
     WebElement txtSuccess;
 
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/div[1]/div/div")
+    WebElement txtJumlahKebutuhanExpand;
+
 
 
     public void showentriessepuluh(){
@@ -210,6 +213,9 @@ public class DataPengajuanM {
     }
     public String getTxtSuccess(){
         return txtSuccess.getText();
+    }
+    public String getTxtJumlahKebutuhanExpand(){
+        return txtJumlahKebutuhanExpand.getAttribute("panel-expand");
     }
 
 }

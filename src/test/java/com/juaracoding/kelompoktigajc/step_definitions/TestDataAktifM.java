@@ -123,10 +123,12 @@ public class TestDataAktifM {
     @Then("TCC.M.AKTIF.AKSI.001 User on view data")
     public void tcc_m_aktif_aksi_001_user_on_view_data(){
         Hooks.delay(1);
-        Assert.assertTrue(dataAktifM.getTxtJumlahKebutuhan().contains("Bekasi"));
-        Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("HCI"));
-        Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("CRM OPERATOR"));
-        Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("Design Grafis"));
+        System.out.println(dataAktifM.getTxtJumlahKebutuhan());
+        System.out.println(dataAktifM.getTxtKebutuhan());
+        Assert.assertTrue(dataAktifM.getTxtJumlahKebutuhan().contains("Bogor"));
+        Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("Gulf"));
+        Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("GLOBAL"));
+        Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("RSM"));
         Assert.assertTrue(dataAktifM.getTxtKebutuhan().contains("MAGANG"));
         extentTest.log(LogStatus.PASS,"User on view data");
     }

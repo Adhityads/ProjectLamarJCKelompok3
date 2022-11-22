@@ -4,17 +4,17 @@ Feature: Data Pengajuan M
     When TCC.M.PENGAJUAN.SHOWENTRIES.001 Showentries default
     Then TCC.M.PENGAJUAN.SHOWENTRIES.001 User on showentries default
 
-  Scenario: TCC.M.PENGAJUAN.SHOWENTRIES.002
-    When TCC.M.PENGAJUAN.SHOWENTRIES.002 User choose 25 entries
-    Then TCC.M.PENGAJUAN.SHOWENTRIES.002 User show 25 entries
-
-  Scenario: TCC.M.PENGAJUAN.SHOWENTRIES.003
-    When TCC.M.PENGAJUAN.SHOWENTRIES.003 User choose 50 entries
-    Then TCC.M.PENGAJUAN.SHOWENTRIES.003 User show 50 entries
-
-  Scenario: TCC.M.PENGAJUAN.SHOWENTRIES.004
-    When TCC.M.PENGAJUAN.SHOWENTRIES.004 User choose 100 entries
-    Then TCC.M.PENGAJUAN.SHOWENTRIES.004 User show 100 entries
+#  Scenario: TCC.M.PENGAJUAN.SHOWENTRIES.002
+#    When TCC.M.PENGAJUAN.SHOWENTRIES.002 User choose 25 entries
+#    Then TCC.M.PENGAJUAN.SHOWENTRIES.002 User show 25 entries
+#
+#  Scenario: TCC.M.PENGAJUAN.SHOWENTRIES.003
+#    When TCC.M.PENGAJUAN.SHOWENTRIES.003 User choose 50 entries
+#    Then TCC.M.PENGAJUAN.SHOWENTRIES.003 User show 50 entries
+#
+#  Scenario: TCC.M.PENGAJUAN.SHOWENTRIES.004
+#    When TCC.M.PENGAJUAN.SHOWENTRIES.004 User choose 100 entries
+#    Then TCC.M.PENGAJUAN.SHOWENTRIES.004 User show 100 entries
 
   Scenario: TCC.M.PENGAJUAN.SEARCH.001
     When TCC.M.PENGAJUAN.SEARCH.001 User input search

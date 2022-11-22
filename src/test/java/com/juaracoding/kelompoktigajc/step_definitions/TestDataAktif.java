@@ -268,6 +268,7 @@ public class TestDataAktif {
 
     @When("TCC.BD.DATAAKTIF.AKSI.004 User click icon download data")
     public void tcc_bd_dataaktif_aksi_004_user_click_icon_download_data(){
+        Hooks.delay(1);
         dataAktif.clickButtonPlus();
         Hooks.delay(1);
         dataAktif.clickIconDownloadDataBd();

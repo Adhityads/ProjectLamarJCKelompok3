@@ -31,7 +31,7 @@ public class TestDataPengajuanM {
     @Then("TCC.M.PENGAJUAN.SHOWENTRIES.001 User on showentries default")
     public void tcc_m_pengajuan_showentries_001_user_on_showentries_default(){
         System.out.println(dataPengajuanM.getTxtTableRow());
-        Assert.assertTrue(dataPengajuanM.getTxtTableRow()==10);
+        Assert.assertTrue(dataPengajuanM.getTxtTableRow()<10);
         extentTest.log(LogStatus.PASS,"User show 10 entries");
     }
     @When("TCC.M.PENGAJUAN.SHOWENTRIES.002 User choose 25 entries")
@@ -178,6 +178,8 @@ public class TestDataPengajuanM {
     }
     @Then("TCC.M.PENGAJUAN.AKSI.008 User show full window")
     public void tcc_m_pengajuan_aksi_008_user_show_expand_window(){
+        dataPengajuanM.getTxtJumlahKebutuhanExpand();
+        System.out.println(dataPengajuanM.getTxtJumlahKebutuhanExpand());
         extentTest.log(LogStatus.PASS,"User show full jumlah kebutuhan window");
     }
     @When("TCC.M.PENGAJUAN.AKSI.009 User click expand window")
