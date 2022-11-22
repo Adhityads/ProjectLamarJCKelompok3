@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e1c6dcc-020e-4eec-9b40-67dd6b48e30f" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataAktifM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/009.Dataaktif.m.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataAktifM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataPengajuanM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/pages/DataPengajuanM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/kelompoktigajc/utils/TestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/008.Datapengajuan.aksi.m.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/008.Datapengajuan.aksi.m.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataPengajuanM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/kelompoktigajc/step_definitions/TestDataPengajuanM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/extent-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/extent-reports.html" afterDir="false" />
-    </list>
+    <list default="true" id="a01d6842-360c-4eca-ac7e-feed07d81a5a" name="Changes" comment="Master" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,15 +26,17 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="PreVersion" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2H78l1P7YBxQc5LeUR2QBWXq95f" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,7 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/SQA/Java/1/Kelompok3JC/src/main/resources/drivers&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/SQABatch6/Tugas Akhir/ProjectLamarJCKelompok3&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -71,7 +60,7 @@
       <recent name="D:\SQA\Java\1\Kelompok3JC\src\main\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RunnerTest">
+  <component name="RunManager" selected="TestNG.&lt;default&gt;">
     <configuration name="Scenario: User invalid login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/01.Login.feature" />
@@ -127,13 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectLamarJCKelompok3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.RunnerTest" />
         <item itemvalue="TestNG.RunnerTest.runScenario" />
         <item itemvalue="Cucumber Java.Scenario: User invalid login" />
-        <item itemvalue="TestNG.RunnerTest.runScenario" />
-        <item itemvalue="TestNG.RunnerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,42 +151,7 @@
       <option name="project" value="LOCAL" />
       <updated>1668088927178</updated>
     </task>
-    <task id="LOCAL-00002" summary="Master">
-      <created>1668089030081</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1668089030081</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update">
-      <created>1668431828473</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1668431828474</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update">
-      <created>1668523847390</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1668523847390</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update">
-      <created>1668613529617</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1668613529617</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update">
-      <created>1668768175757</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1668768175757</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,7 +167,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Master" />
-    <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Master" />
   </component>
 </project>
