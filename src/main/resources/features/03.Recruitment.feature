@@ -45,17 +45,17 @@ Feature: Menu Recruitment
     When User click show entries sepuluh
     Then User show sepuluh entries
 
-  Scenario: TCC.BD.SHOWENTRIES.002
-    When User click show entries dualima
-    Then User show dualima entries
-
-  Scenario: TCC.BD.SHOWENTRIES.003
-    When User click show entries limapuluh
-    Then User show limapuluh entries
-
-  Scenario: TCC.BD.SHOWENTRIES.004
-    When User click show entries seratus
-    Then User show seratus entries
+#  Scenario: TCC.BD.SHOWENTRIES.002
+#    When User click show entries dualima
+#    Then User show dualima entries
+#
+#  Scenario: TCC.BD.SHOWENTRIES.003
+#    When User click show entries limapuluh
+#    Then User show limapuluh entries
+#
+#  Scenario: TCC.BD.SHOWENTRIES.004
+#    When User click show entries seratus
+#    Then User show seratus entries
 
   Scenario: TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001
     When TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.001 User click button tambah
@@ -64,3 +64,21 @@ Feature: Menu Recruitment
   Scenario: TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002
     When TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user fill penempatan
     Then TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user filled penempatan
+
+  Scenario: TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.004
+    When TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.004 User fill jumlah kebutuhan
+    Then TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.004 User filled jumlah kebutuhan
+
+  Scenario: TCC.BD.TAMBAH.KEBUTUHAN.001
+    When TCC.BD.TAMBAH.KEBUTUHAN.001 User fill nama project
+    Then TCC.BD.TAMBAH.KEBUTUHAN.001 User filled nama project
+
+  Scenario: TCC.BD.TAMBAH.KEBUTUHAN.004
+    When TCC.BD.TAMBAH.KEBUTUHAN.004 User fill tanggal aktif
+    Then TCC.BD.TAMBAH.KEBUTUHAN.004 User filled tanggal aktif
+
+  Scenario: TCC.BD.TAMBAH.KEBUTUHAN.006
+    When TCC.BD.TAMBAH.KEBUTUHAN.006 User fill tanggal berakhir
+    Then TCC.BD.TAMBAH.KEBUTUHAN.006 User filled tanggal berakhir
+
+

@@ -1,8 +1,6 @@
 package com.juaracoding.kelompoktigajc.step_definitions;
 
-import com.juaracoding.kelompoktigajc.pages.LoginPage;
 import com.juaracoding.kelompoktigajc.pages.RecruitmentPage;
-import com.juaracoding.kelompoktigajc.utils.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.And;
@@ -229,5 +227,43 @@ public class TestRecruitment {
     @Then("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.002 user filled penempatan")
     public void tcc_bd_tambah_jumlahkebutuhan_002_user_filled_penempatan(){
         extentTest.log(LogStatus.PASS,"user filled penempatan");
+    }
+
+    @When("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.004 User fill jumlah kebutuhan")
+    public void tcc_bd_tambah_jumlahkebutuhan_004_user_fill_jumlah_kebutuhan(){
+        recruitmentPage.setJumlahKebutuhan("2");
+        extentTest.log(LogStatus.PASS,"User fill jumlah kebutuhan");
+    }
+    @Then("TCC.BD.TAMBAH.JUMLAHKEBUTUHAN.004 User filled jumlah kebutuhan")
+    public void tcc_bd_tambah_jumlahkebutuhan_004_user_filled_jumlah_kebutuhan(){
+        extentTest.log(LogStatus.PASS,"User filled jumlah penempatan");
+    }
+    @When("TCC.BD.TAMBAH.KEBUTUHAN.001 User fill nama project")
+    public void tcc_bd_tambah_kebutuhan_001_user_fill_nama_project(){
+        recruitmentPage.setProjectName("kredivo");
+        extentTest.log(LogStatus.PASS,"User fill nama project");
+    }
+    @Then("TCC.BD.TAMBAH.KEBUTUHAN.001 User filled nama project")
+    public void tcc_bd_tambah_kebutuhan_001_user_filled_nama_project(){
+        Assert.assertTrue(recruitmentPage.getTxtValueNamaKlien().contains("FINACCEL"));
+        extentTest.log(LogStatus.PASS,"User filled nama project");
+    }
+    @When("TCC.BD.TAMBAH.KEBUTUHAN.004 User fill tanggal aktif")
+    public void tcc_bd_kebutuhan_004_user_fill_tanggal_aktif(){
+        recruitmentPage.setTanggalAktif("22-11-2022");
+        extentTest.log(LogStatus.PASS,"User fill tanggal aktif");
+    }
+    @Then("TCC.BD.TAMBAH.KEBUTUHAN.004 User filled tanggal aktif")
+    public void tcc_bd_tambah_kebutuhan_004_user_filled_tanggal_aktif(){
+        extentTest.log(LogStatus.PASS,"User filled tanggal aktif");
+    }
+    @When("TCC.BD.TAMBAH.KEBUTUHAN.006 User fill tanggal berakhir")
+    public void tcc_bd_tambah_kebutuhan_006_user_fill_tanggal_berakhir(){
+        recruitmentPage.setTanggalBerakhir("22-01-2023");
+        extentTest.log(LogStatus.PASS,"user fill tanggal berakhir");
+    }
+    @Then("TCC.BD.TAMBAH.KEBUTUHAN.006 User filled tanggal berakhir")
+    public void tcc_bd_tambah_kebutuhan_006_user_filled_tanggal_berakhir(){
+        extentTest.log(LogStatus.PASS,"User filled tanggal berakhir");
     }
 }

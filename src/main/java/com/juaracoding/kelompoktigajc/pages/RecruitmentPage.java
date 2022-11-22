@@ -57,7 +57,7 @@ public class RecruitmentPage {
     WebElement penempatan;
     @FindBy(xpath = "//*[@id=\"add_form_kebutuhan\"]/div/div[2]/div/input")
     WebElement jumlahKebutuhan;
-    @FindBy(xpath = "//*[@id=\"select2-Project_Name-container\"]")
+    @FindBy(xpath = "//*[@id=\"Project_Name\"]")
     WebElement projectName;
     @FindBy(xpath = "//*[@id=\"Active_Date\"]")
     WebElement tanggalAktif;
@@ -136,6 +136,8 @@ public class RecruitmentPage {
     WebElement txtForm;
     @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/div[4]/div")
     WebElement txtRemunerasi;
+    @FindBy(xpath = "//*[@id=\"Client_Name\"]")
+    WebElement txtValueNamaKlien;
 
 
     //-----------------------------------------------------------------------------------------------//
@@ -229,6 +231,21 @@ public class RecruitmentPage {
         Select penempatan = new Select(elementSelectPenempatan);
         penempatan.selectByIndex(3);
     }
+    public void setJumlahKebutuhan(String value){
+        jumlahKebutuhan.sendKeys(value);
+    }
+    public void setProjectName(String value){
+        WebElement elementSelectProjectName = projectName;
+        Select projectName = new Select(elementSelectProjectName);
+        projectName.selectByIndex(2);
+    }
+    public void setTanggalAktif(String value){
+        tanggalAktif.sendKeys("value",Keys.ENTER);
+    }
+    public void setTanggalBerakhir(String value){
+        tanggalBerakhir.sendKeys("value",Keys.ENTER);
+    }
+
 
 
 
@@ -270,7 +287,9 @@ public class RecruitmentPage {
     public String getTxtRemunerasi(){
         return txtRemunerasi.getText();
     }
-
+    public String getTxtValueNamaKlien(){
+        return txtValueNamaKlien.getAttribute("value");
+    }
 
 
 }
