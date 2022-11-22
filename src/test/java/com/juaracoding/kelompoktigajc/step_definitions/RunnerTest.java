@@ -14,7 +14,9 @@ import io.cucumber.testng.CucumberOptions;
                     "src/main/resources/features/013.Datapengajuan.aksi.m.feature",
                     "src/main/resources/features/014.Dataaktif.m.feature",
                     "src/main/resources/features/002.Dashboard.feature",
-                    "src/main/resources/features/003.Recruitment.feature"},
+                    "src/main/resources/features/003.Recruitment.feature",
+                    "src/main/resources/features/01.Login.feature",
+                    "src/main/resources/features/BD.EditData.feature"},
         glue = "com.juaracoding.kelompoktigajc.step_definitions",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"})
 public class RunnerTest extends AbstractTestNGCucumberTests {
