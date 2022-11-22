@@ -38,6 +38,7 @@ public class TestEditData {
     }
     @Then("TCC.BD.AKSI.EDIT.001 menampilkan form update")
     public void user_menampilkan_form_update() {
+        Hooks.delay(1);
         Assert.assertEquals(EditDataPage.getTxtFormUpdate(), "Form Update");
         extentTest.log(LogStatus.PASS, "menampilkan form update");
     }
@@ -165,6 +166,7 @@ public class TestEditData {
     //TCC.BD.AKSI.EDIT.085 tombol expend form
     @When("TCC.BD.AKSI.EDIT.085 menekan tombol expend")
     public void user_menekan_tombol_expend_form_kecil() {
+        Hooks.delay(1);
         EditDataPage.clickBtnFormK();
         extentTest.log(LogStatus.PASS, "menekan tombol expend");
     }
